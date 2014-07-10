@@ -1,0 +1,315 @@
+F/libc    (  452): Fatal signal 11 (SIGSEGV) at 0x00000000 (code=1), thread 452 (m.android.phone)
+I/DEBUG   (   55): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   55): Build fingerprint: 'Android/aosp_arm/generic:4.3/JWR66Y/eng.bim.20140225.232219:eng/test-keys'
+I/DEBUG   (   55): Revision: '0'
+I/DEBUG   (   55): pid: 452, tid: 452, name: m.android.phone  >>> com.android.phone <<<
+I/DEBUG   (   55): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00000000
+I/DEBUG   (   55):     r0 a96e20d4  r1 00000000  r2 00000000  r3 000001c4
+I/DEBUG   (   55):     r4 a96df738  r5 a96df718  r6 a96e20d4  r7 b6f653f0
+I/DEBUG   (   55):     r8 00000024  r9 b6f363d0  sl bebbd4a8  fp 00000010
+I/DEBUG   (   55):     ip 01c44001  sp bebbd450  lr a96db60c  pc a96ded04  cpsr 80000010
+I/DEBUG   (   55):     d0  0000000000000000  d1  3ff0000000000000
+I/DEBUG   (   55):     d2  7e37e43c8800759c  d3  7e37e43c8800759c
+I/DEBUG   (   55):     d4  0000000000000000  d5  4018000000000000
+I/DEBUG   (   55):     d6  3ff0000000000000  d7  3ff0000000000000
+I/DEBUG   (   55):     d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   55):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   55):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   55):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   55):     scr 20000010
+I/DEBUG   (   55): 
+I/DEBUG   (   55): backtrace:
+I/DEBUG   (   55):     #00  pc 00004d04  /data/local/tmp/libdexdump.so (dalvik_dump_class+4)
+I/DEBUG   (   55):     #01  pc 00001608  /data/local/tmp/libdexdump.so
+I/DEBUG   (   55):     #02  pc 00014fb1  /system/lib/libutils.so (android::Looper::pollInner(int)+92)
+I/DEBUG   (   55):     #03  pc 000151d5  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+92)
+I/DEBUG   (   55):     #04  pc 00067b69  /system/lib/libandroid_runtime.so (android::NativeMessageQueue::pollOnce(_JNIEnv*, int)+22)
+I/DEBUG   (   55):     #05  pc 0001dc4c  /system/lib/libdvm.so (dvmPlatformInvoke+112)
+I/DEBUG   (   55):     #06  pc 0004dcab  /system/lib/libdvm.so (dvmCallJNIMethod(unsigned int const*, JValue*, Method const*, Thread*)+394)
+I/DEBUG   (   55):     #07  pc 000385e1  /system/lib/libdvm.so (dvmCheckCallJNIMethod(unsigned int const*, JValue*, Method const*, Thread*)+8)
+I/DEBUG   (   55):     #08  pc 00027060  /system/lib/libdvm.so
+I/DEBUG   (   55):     #09  pc 0002b580  /system/lib/libdvm.so (dvmInterpret(Thread*, Method const*, JValue*)+184)
+I/DEBUG   (   55):     #10  pc 0005ff7b  /system/lib/libdvm.so (dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool)+350)
+I/DEBUG   (   55):     #11  pc 00067ae3  /system/lib/libdvm.so
+I/DEBUG   (   55):     #12  pc 00027060  /system/lib/libdvm.so
+I/DEBUG   (   55):     #13  pc 0002b580  /system/lib/libdvm.so (dvmInterpret(Thread*, Method const*, JValue*)+184)
+I/DEBUG   (   55):     #14  pc 0005fcbd  /system/lib/libdvm.so (dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, std::__va_list)+292)
+I/DEBUG   (   55):     #15  pc 000499ab  /system/lib/libdvm.so
+I/DEBUG   (   55):     #16  pc 0003cb3d  /system/lib/libdvm.so
+I/DEBUG   (   55):     #17  pc 0004b68f  /system/lib/libandroid_runtime.so
+I/DEBUG   (   55):     #18  pc 0004c30f  /system/lib/libandroid_runtime.so (android::AndroidRuntime::start(char const*, char const*)+378)
+I/DEBUG   (   55):     #19  pc 0000105b  /system/bin/app_process
+I/DEBUG   (   55):     #20  pc 0000db4f  /system/lib/libc.so (__libc_init+50)
+I/DEBUG   (   55):     #21  pc 00000d7c  /system/bin/app_process
+I/DEBUG   (   55): 
+I/DEBUG   (   55): stack:
+I/DEBUG   (   55):          bebbd410  b82538d8  [heap]
+I/DEBUG   (   55):          bebbd414  00000000  
+I/DEBUG   (   55):          bebbd418  b6f65d8c  
+I/DEBUG   (   55):          bebbd41c  b82538e0  [heap]
+I/DEBUG   (   55):          bebbd420  00000024  
+I/DEBUG   (   55):          bebbd424  b6f2a9eb  /system/lib/libc.so (dlfree+50)
+I/DEBUG   (   55):          bebbd428  b6f62000  /system/lib/libc.so
+I/DEBUG   (   55):          bebbd42c  b6f653f0  
+I/DEBUG   (   55):          bebbd430  b6f653f0  
+I/DEBUG   (   55):          bebbd434  00000000  
+I/DEBUG   (   55):          bebbd438  b6f653f0  
+I/DEBUG   (   55):          bebbd43c  00000000  
+I/DEBUG   (   55):          bebbd440  b6f65d8c  
+I/DEBUG   (   55):          bebbd444  b6f39e9f  /system/lib/libc.so (fclose+150)
+I/DEBUG   (   55):          bebbd448  df0027ad  
+I/DEBUG   (   55):          bebbd44c  00000000  
+I/DEBUG   (   55):     #00  bebbd450  a96df738  /data/local/tmp/libdexdump.so
+I/DEBUG   (   55):          bebbd454  a96db60c  /data/local/tmp/libdexdump.so
+I/DEBUG   (   55):     #01  bebbd458  e59f3010  
+I/DEBUG   (   55):          bebbd45c  00000219  
+I/DEBUG   (   55):          bebbd460  e59ff010  
+I/DEBUG   (   55):          bebbd464  b802e040  [heap]
+I/DEBUG   (   55):          bebbd468  00000000  
+I/DEBUG   (   55):          bebbd46c  b802e054  [heap]
+I/DEBUG   (   55):          bebbd470  bebbd4a8  [stack]
+I/DEBUG   (   55):          bebbd474  b802e088  [heap]
+I/DEBUG   (   55):          bebbd478  00000014  
+I/DEBUG   (   55):          bebbd47c  b7ffb0b8  [heap]
+I/DEBUG   (   55):          bebbd480  bebbd61c  [stack]
+I/DEBUG   (   55):          bebbd484  b6ef5fb5  /system/lib/libutils.so (android::Looper::pollInner(int)+96)
+I/DEBUG   (   55):     #02  bebbd488  bebbd540  [stack]
+I/DEBUG   (   55):          bebbd48c  52f00021  
+I/DEBUG   (   55):          bebbd490  b1ae80e0  /dev/ashmem/dalvik-heap (deleted)
+I/DEBUG   (   55):          bebbd494  b6738658  /system/lib/libdvm.so
+I/DEBUG   (   55):          bebbd498  bebbd588  [stack]
+I/DEBUG   (   55):          bebbd49c  bebbd594  [stack]
+I/DEBUG   (   55):          bebbd4a0  b673877a  /system/lib/libdvm.so
+I/DEBUG   (   55):          bebbd4a4  b67386b2  /system/lib/libdvm.so
+I/DEBUG   (   55):          bebbd4a8  bebbd58c  [stack]
+I/DEBUG   (   55):          bebbd4ac  b66e397f  /system/lib/libdvm.so
+I/DEBUG   (   55):          bebbd4b0  00000018  
+I/DEBUG   (   55):          bebbd4b4  b81d7fb0  [heap]
+I/DEBUG   (   55):          bebbd4b8  0000001c  
+I/DEBUG   (   55):          bebbd4bc  0000001b  
+I/DEBUG   (   55):          bebbd4c0  b6f65044  
+I/DEBUG   (   55):          bebbd4c4  0000001b  
+I/DEBUG   (   55):          ........  ........
+I/DEBUG   (   55): 
+I/DEBUG   (   55): memory near r0:
+I/DEBUG   (   55):     a96e20b4 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     a96e20c4 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     a96e20d4 b69da5b8 b66fedab b6715001 b66fd135  
+I/DEBUG   (   55):     a96e20e4 b66f269b b6714aa9 b671548d b6715521  
+I/DEBUG   (   55):     a96e20f4 b66f246b b66ff019 b6709b99 b6709a41  
+I/DEBUG   (   55):     a96e2104 b66fb10d b66f416d b66f73a9 b67152f9  
+I/DEBUG   (   55):     a96e2114 b6713425 b6713465 b66f75a9 b66f873b  
+I/DEBUG   (   55):     a96e2124 b6713417 b66f7b21 00000000 00000000  
+I/DEBUG   (   55):     a96e2134 b66ef0d9 b6713461 00000000 b6751a40  
+I/DEBUG   (   55):     a96e2144 b6751d04 b67581a0 00000000 00000001  
+I/DEBUG   (   55):     a96e2154 a96db6a0 a96db6a0 00000000 00000000  
+I/DEBUG   (   55):     a96e2164 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     a96e2174 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     a96e2184 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     a96e2194 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     a96e21a4 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55): 
+I/DEBUG   (   55): memory near r4:
+I/DEBUG   (   55):     a96df718 7461642f 6f6c2f61 2f6c6163 2f706d74  
+I/DEBUG   (   55):     a96df728 64786564 2e706d75 00676f6c 00000000  
+I/DEBUG   (   55):     a96df738 00002b61 00000000 706d7544 20676e69  
+I/DEBUG   (   55):     a96df748 73616c43 0a736573 00000000 00000000  
+I/DEBUG   (   55):     a96df758 44534d53 61707369 65686374 6c432072  
+I/DEBUG   (   55):     a96df768 20737361 706d7544 000a6465 00000000  
+I/DEBUG   (   55):     a96df778 6c6c6163 20676e69 6769726f 6f706520  
+I/DEBUG   (   55):     a96df788 000a6c6c 00000000 7362696c 6964736d  
+I/DEBUG   (   55):     a96df798 74617073 203a6863 72617473 0a646574  
+I/DEBUG   (   55):     a96df7a8 00000000 00000000 6362696c 0000002e  
+I/DEBUG   (   55):     a96df7b8 6c6f7065 61775f6c 00007469 00000000  
+I/DEBUG   (   55):     a96df7c8 72646461 203d2020 000a7825 00000000  
+I/DEBUG   (   55):     a96df7d8 6b6f6f68 203d2066 000a7825 00000000  
+I/DEBUG   (   55):     a96df7e8 72646461 25783020 6e612078 6f682064  
+I/DEBUG   (   55):     a96df7f8 30206b6f 0a782578 6e6f6420 6d207427  
+I/DEBUG   (   55):     a96df808 68637461 00000a21 6769726f 25203d20  
+I/DEBUG   (   55): 
+I/DEBUG   (   55): memory near r5:
+I/DEBUG   (   55):     a96df6f8 7ffffe2c 7ffffc54 7ffffe30 7ffffd18  
+I/DEBUG   (   55):     a96df708 80b0b0b0 7ffffd34 00000001 00000000  
+I/DEBUG   (   55):     a96df718 7461642f 6f6c2f61 2f6c6163 2f706d74  
+I/DEBUG   (   55):     a96df728 64786564 2e706d75 00676f6c 00000000  
+I/DEBUG   (   55):     a96df738 00002b61 00000000 706d7544 20676e69  
+I/DEBUG   (   55):     a96df748 73616c43 0a736573 00000000 00000000  
+I/DEBUG   (   55):     a96df758 44534d53 61707369 65686374 6c432072  
+I/DEBUG   (   55):     a96df768 20737361 706d7544 000a6465 00000000  
+I/DEBUG   (   55):     a96df778 6c6c6163 20676e69 6769726f 6f706520  
+I/DEBUG   (   55):     a96df788 000a6c6c 00000000 7362696c 6964736d  
+I/DEBUG   (   55):     a96df798 74617073 203a6863 72617473 0a646574  
+I/DEBUG   (   55):     a96df7a8 00000000 00000000 6362696c 0000002e  
+I/DEBUG   (   55):     a96df7b8 6c6f7065 61775f6c 00007469 00000000  
+I/DEBUG   (   55):     a96df7c8 72646461 203d2020 000a7825 00000000  
+I/DEBUG   (   55):     a96df7d8 6b6f6f68 203d2066 000a7825 00000000  
+I/DEBUG   (   55):     a96df7e8 72646461 25783020 6e612078 6f682064  
+I/DEBUG   (   55): 
+I/DEBUG   (   55): memory near r6:
+I/DEBUG   (   55):     a96e20b4 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     a96e20c4 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     a96e20d4 b69da5b8 b66fedab b6715001 b66fd135  
+I/DEBUG   (   55):     a96e20e4 b66f269b b6714aa9 b671548d b6715521  
+I/DEBUG   (   55):     a96e20f4 b66f246b b66ff019 b6709b99 b6709a41  
+I/DEBUG   (   55):     a96e2104 b66fb10d b66f416d b66f73a9 b67152f9  
+I/DEBUG   (   55):     a96e2114 b6713425 b6713465 b66f75a9 b66f873b  
+I/DEBUG   (   55):     a96e2124 b6713417 b66f7b21 00000000 00000000  
+I/DEBUG   (   55):     a96e2134 b66ef0d9 b6713461 00000000 b6751a40  
+I/DEBUG   (   55):     a96e2144 b6751d04 b67581a0 00000000 00000001  
+I/DEBUG   (   55):     a96e2154 a96db6a0 a96db6a0 00000000 00000000  
+I/DEBUG   (   55):     a96e2164 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     a96e2174 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     a96e2184 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     a96e2194 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     a96e21a4 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55): 
+I/DEBUG   (   55): memory near r7:
+I/DEBUG   (   55):     b6f653d0 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     b6f653e0 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     b6f653f0 b82538e0 00000000 00000000 00430000  
+I/DEBUG   (   55):     b6f65400 b82538e0 00001000 00000000 b6f653f0  
+I/DEBUG   (   55):     b6f65410 b6f3baf7 b6f3ba79 b6f3bad3 b6f3ba9b  
+I/DEBUG   (   55):     b6f65420 b6f6528c 00000000 00000000 00000000  
+I/DEBUG   (   55):     b6f65430 00000000 00000000 00000000 00001000  
+I/DEBUG   (   55):     b6f65440 000005e9 b81de8a4 00000000 00000000  
+I/DEBUG   (   55):     b6f65450 00370000 b81de898 00000400 00000000  
+I/DEBUG   (   55):     b6f65460 b6f65444 b6f3baf7 b6f3ba79 b6f3bad3  
+I/DEBUG   (   55):     b6f65470 b6f3ba9b b6f6529c 00000000 00000000  
+I/DEBUG   (   55):     b6f65480 00000000 00000000 00000000 00000000  
+I/DEBUG   (   55):     b6f65490 00000400 0000e723 b81db3a7 00000000  
+I/DEBUG   (   55):     b6f654a0 00000000 00370000 b81db380 00000400  
+I/DEBUG   (   55):     b6f654b0 00000000 b6f65498 b6f3baf7 b6f3ba79  
+I/DEBUG   (   55):     b6f654c0 b6f3bad3 b6f3ba9b b6f652ac 00000000  
+I/DEBUG   (   55): 
+I/DEBUG   (   55): memory near r9:
+I/DEBUG   (   55):     b6f363b0 e1a0c007 e3a070fb ef000000 e1a0700c  
+I/DEBUG   (   55):     b6f363c0 e3700a01 912fff1e e2600000 ea007d4b  
+I/DEBUG   (   55):     b6f363d0 e1a0c007 e3a070fc ef000000 e1a0700c  
+I/DEBUG   (   55):     b6f363e0 e3700a01 912fff1e e2600000 ea007d43  
+I/DEBUG   (   55):     b6f363f0 e1a0c007 e3a07f4f ef000000 e1a0700c  
+I/DEBUG   (   55):     b6f36400 e3700a01 912fff1e e2600000 ea007d3b  
+I/DEBUG   (   55):     b6f36410 e1a0c007 e59f7014 ef000000 e1a0700c  
+I/DEBUG   (   55):     b6f36420 e3700a01 912fff1e e2600000 ea007d33  
+I/DEBUG   (   55):     b6f36430 0000013d e1a0c007 e59f7014 ef000000  
+I/DEBUG   (   55):     b6f36440 e1a0700c e3700a01 912fff1e e2600000  
+I/DEBUG   (   55):     b6f36450 ea007d2a 0000013e e1a0c007 e3a070a8  
+I/DEBUG   (   55):     b6f36460 ef000000 e1a0700c e3700a01 912fff1e  
+I/DEBUG   (   55):     b6f36470 e2600000 ea007d21 e1a0c007 e3a07f59  
+I/DEBUG   (   55):     b6f36480 ef000000 e1a0700c e3700a01 912fff1e  
+I/DEBUG   (   55):     b6f36490 e2600000 ea007d19 e1a0c007 e59f7014  
+I/DEBUG   (   55):     b6f364a0 ef000000 e1a0700c e3700a01 912fff1e  
+I/DEBUG   (   55): 
+I/DEBUG   (   55): memory near sl:
+I/DEBUG   (   55):     bebbd488 bebbd540 52f00021 b1ae80e0 b6738658  
+I/DEBUG   (   55):     bebbd498 bebbd588 bebbd594 b673877a b67386b2  
+I/DEBUG   (   55):     bebbd4a8 bebbd58c b66e397f 00000018 b81d7fb0  
+I/DEBUG   (   55):     bebbd4b8 0000001c 0000001b b6f65044 0000001b  
+I/DEBUG   (   55):     bebbd4c8 b81fc6d0 b6f2a5f7 00000018 b2394008  
+I/DEBUG   (   55):     bebbd4d8 bebbd590 00439aa4 b7ffb414 53000021  
+I/DEBUG   (   55):     bebbd4e8 0000001b b1bd5850 b81fc6c8 b7ff7cd8  
+I/DEBUG   (   55):     bebbd4f8 53000021 b81fc6d0 00000001 03ec1ce8  
+I/DEBUG   (   55):     bebbd508 b6f62000 b81fc6d0 b7ff7cd8 53000021  
+I/DEBUG   (   55):     bebbd518 b6753c88 00000001 b7ff7cd8 bebbd580  
+I/DEBUG   (   55):     bebbd528 bebbd61c b66e5c17 b6738705 b7ffb0a8  
+I/DEBUG   (   55):     bebbd538 53000021 b81fc6d0 03ec1ce8 b7ff7cd8  
+I/DEBUG   (   55):     bebbd548 b674de66 00000014 b6f65101 b81fc6d0  
+I/DEBUG   (   55):     bebbd558 00000000 00000000 53000021 b6f651f4  
+I/DEBUG   (   55):     bebbd568 b81fc6d0 b6e33e03 b6e737eb b6e4ef6f  
+I/DEBUG   (   55):     bebbd578 bebbd61c b66e5c17 b6738700 b7ffb0a8  
+I/DEBUG   (   55): 
+I/DEBUG   (   55): memory near ip:
+I/DEBUG   (   55):     01c43fe0 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c43ff0 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c44000 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c44010 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c44020 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c44030 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c44040 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c44050 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c44060 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c44070 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c44080 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c44090 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c440a0 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c440b0 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c440c0 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55):     01c440d0 ffffffff ffffffff ffffffff ffffffff  
+I/DEBUG   (   55): 
+I/DEBUG   (   55): memory near sp:
+I/DEBUG   (   55):     bebbd430 b6f653f0 00000000 b6f653f0 00000000  
+I/DEBUG   (   55):     bebbd440 b6f65d8c b6f39e9f df0027ad 00000000  
+I/DEBUG   (   55):     bebbd450 a96df738 a96db60c e59f3010 00000219  
+I/DEBUG   (   55):     bebbd460 e59ff010 b802e040 00000000 b802e054  
+I/DEBUG   (   55):     bebbd470 bebbd4a8 b802e088 00000014 b7ffb0b8  
+I/DEBUG   (   55):     bebbd480 bebbd61c b6ef5fb5 bebbd540 52f00021  
+I/DEBUG   (   55):     bebbd490 b1ae80e0 b6738658 bebbd588 bebbd594  
+I/DEBUG   (   55):     bebbd4a0 b673877a b67386b2 bebbd58c b66e397f  
+I/DEBUG   (   55):     bebbd4b0 00000018 b81d7fb0 0000001c 0000001b  
+I/DEBUG   (   55):     bebbd4c0 b6f65044 0000001b b81fc6d0 b6f2a5f7  
+I/DEBUG   (   55):     bebbd4d0 00000018 b2394008 bebbd590 00439aa4  
+I/DEBUG   (   55):     bebbd4e0 b7ffb414 53000021 0000001b b1bd5850  
+I/DEBUG   (   55):     bebbd4f0 b81fc6c8 b7ff7cd8 53000021 b81fc6d0  
+I/DEBUG   (   55):     bebbd500 00000001 03ec1ce8 b6f62000 b81fc6d0  
+I/DEBUG   (   55):     bebbd510 b7ff7cd8 53000021 b6753c88 00000001  
+I/DEBUG   (   55):     bebbd520 b7ff7cd8 bebbd580 bebbd61c b66e5c17  
+I/DEBUG   (   55): 
+I/DEBUG   (   55): code around pc:
+I/DEBUG   (   55):     a96dece4 000014c8 000014a4 00001444 e92d4008  
+I/DEBUG   (   55):     a96decf4 e590300c e12fff33 e8bd8008 e92d4010  
+I/DEBUG   (   55):     a96ded04 e5d12000 e1a04000 e3520000 0a000008  
+I/DEBUG   (   55):     a96ded14 e5903040 e1a00001 e12fff33 e3500000  
+I/DEBUG   (   55):     a96ded24 0a000006 e5943064 e3a01001 e12fff33  
+I/DEBUG   (   55):     a96ded34 e8bd8010 e5903044 e1a00002 e12fff33  
+I/DEBUG   (   55):     a96ded44 e8bd8010 1c0db5f8 1c1f1c16 d0321e04  
+I/DEBUG   (   55):     a96ded54 f7fc1c20 1c28eb94 ebd8f7fc 33ff1c63  
+I/DEBUG   (   55):     a96ded64 1c691e82 f7fc1c18 2280eb72 18a00092  
+I/DEBUG   (   55):     a96ded74 f7fc1c31 23c0eb84 18e0009b f7fc1c39  
+I/DEBUG   (   55):     a96ded84 9a06eb7e 99074b0d 238450e2 50e200db  
+I/DEBUG   (   55):     a96ded94 23004a0b 228550a3 50a100d2 21804a09  
+I/DEBUG   (   55):     a96deda4 50a30049 50a14a08 00d22286 228850a3  
+I/DEBUG   (   55):     a96dedb4 50a300d2 1c202401 46c0bdf8 0000041c  
+I/DEBUG   (   55):     a96dedc4 00000424 00000404 0000042c 4cd7b5f0  
+I/DEBUG   (   55):     a96dedd4 27884bd7 1c0c44a5 00ff49d6 44791c05  
+I/DEBUG   (   55): 
+I/DEBUG   (   55): code around lr:
+I/DEBUG   (   55):     a96db5ec e3a01001 e08f0000 ebffff71 e1a00007  
+I/DEBUG   (   55):     a96db5fc ebffff72 e1a00006 e3a01000 eb000dbc  
+I/DEBUG   (   55):     a96db60c e1a01004 e1a00005 ebffff66 e1a03000  
+I/DEBUG   (   55):     a96db61c e1a06000 e59f0070 e3a0201b e3a01001  
+I/DEBUG   (   55):     a96db62c e08f0000 ebffff62 e1a00006 ebffff63  
+I/DEBUG   (   55):     a96db63c e1a01004 e1a00005 ebffff5a e1a03000  
+I/DEBUG   (   55):     a96db64c e1a04000 e59f0044 e3a01001 e3a02013  
+I/DEBUG   (   55):     a96db65c e08f0000 ebffff56 e1a00004 ebffff57  
+I/DEBUG   (   55):     a96db66c e1a00008 e1a0100a e1a0200b e59d3004  
+I/DEBUG   (   55):     a96db67c e12fff39 e28dd00c e8bd8ff0 00006a64  
+I/DEBUG   (   55):     a96db68c 00004154 0000416c 00004148 00004124  
+I/DEBUG   (   55):     a96db69c 00004114 e92d4038 e59f3040 e1a04000  
+I/DEBUG   (   55):     a96db6ac e08f3003 e593314c e3530000 1a000000  
+I/DEBUG   (   55):     a96db6bc e8bd8038 e59f0028 e59f1028 e08f0000  
+I/DEBUG   (   55):     a96db6cc e08f1001 ebffff37 e1a01004 e1a05000  
+I/DEBUG   (   55):     a96db6dc ebffff3d e1a00005 e8bd4038 eaffff37  
+I/BootReceiver(  310): Copying /data/tombstones/tombstone_04 to DropBox (SYSTEM_TOMBSTONE)
+I/ServiceManager(   51): service 'isms' died
+I/ServiceManager(   51): service 'simphonebook' died
+I/ServiceManager(   51): service 'iphonesubinfo' died
+I/ServiceManager(   51): service 'phone' died
+D/Zygote  (   58): Process 452 terminated by signal (11)
+D/dalvikvm(  310): GC_FOR_ALLOC freed 2022K, 16% free 13450K/15968K, paused 158ms, total 168ms
+I/dalvikvm-heap(  310): Grow heap (frag case) to 13.359MB for 196624-byte allocation
+D/dalvikvm(  310): GC_FOR_ALLOC freed 1621K, 26% free 12021K/16164K, paused 111ms, total 112ms
+I/ActivityManager(  310): Process com.android.phone (pid 452) has died.
+W/ActivityManager(  310): Scheduling restart of crashed service com.android.phone/.TelephonyDebugService in 0ms
+I/ActivityManager(  310): Start proc com.android.phone for restart com.android.phone: pid=928 uid=1001 gids={41001, 3002, 3001, 3003, 1015, 1028}
+D/dalvikvm(  310): GC_CONCURRENT freed 259K, 24% free 12439K/16164K, paused 41ms+10ms, total 190ms
+D/dalvikvm(  310): WAIT_FOR_CONCURRENT_GC blocked 150ms
+W/TelephonyProvider(  928): onCreate: confFile=/system/etc/apns-conf.xml oldCheckSum=-1
+E/BluetoothAdapter(  928): Bluetooth binder is null
+D/dalvikvm(  928): GC_CONCURRENT freed 195K, 3% free 9091K/9320K, paused 28ms+6ms, total 166ms
+D/CallNotifier(  928): CallNotifier: mSignalInfoToneGenerator created when toneplay
+E/BluetoothAdapter(  928): Bluetooth binder is null
+D/TelephonyDebugService(  928): TelephonyDebugService()
+E/MobileDataStateTracker(  310): default: unknown network type: 0
+D/ConnectivityService(  310): ConnectivityChange for mobile: DISCONNECTED/DISCONNECTED
+D/ConnectivityService(  310): Attempting to switch to wifi
+D/NetUtils(  310): android_net_utils_resetConnections in env=0xb8217c60 clazz=0x3fa00001 iface=eth0 mask=0x3
+D/ConnectivityService(  310): resetConnections(eth0, 3)
